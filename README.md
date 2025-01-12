@@ -32,12 +32,12 @@ The `ft_libc` library provides a robust suite of tools for developers working in
 - **Character Handling**: Check and manipulate character properties.
 
 ### **2. Advanced Output Formatting ([ft_printf](https://github.com/Dexter88xD/ft_printf))**
-- Fully compatible with standard C `printf` functionality.
+- custom implementation of the standard `printf`.
 - Supports formatting for strings, integers, characters, pointers, and more.
 
 ### **3. Line Reading ([get_next_line](https://github.com/Dexter88xD/get_next_line))**
 - Efficiently read lines from a file descriptor.
-- Supports both single and multiple file descriptors.
+- Supports both single and multiple file descriptors (in the bonus section of gnl).
 
 ---
 
