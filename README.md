@@ -164,16 +164,6 @@ Here’s an example showcasing the combined functionality:
 
 ---
 
-## Difference in the `Makefile`
-
-The `Makefile` is structured to handle all components ([libft](https://github.com/Dexter88xD/libft), [ft_printf](https://github.com/Dexter88xD/ft_printf), and [get_next_line](https://github.com/Dexter88xD/get_next_line)) seamlessly. Key features include:
-- Separate rules for each project component ([libft](https://github.com/Dexter88xD/libft), [ft_printf](https://github.com/Dexter88xD/ft_printf), and [get_next_line](https://github.com/Dexter88xD/get_next_line)).
-- A `files` target to compile everything at once.
-- Bonus support for linked lists.
-- Clean and rebuild rules for efficient project management.
-
----
-
 ## Contributing
 
 Feel free to contribute by:
