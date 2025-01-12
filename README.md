@@ -102,31 +102,31 @@ The `ft_libc` library provides a robust suite of tools for developers working in
 
 ### **Step 1: Clone the Repository**
 ```bash
-git clone https://github.com/Dexter88xD/ft_libc.git
-cd ft_libc
+  git clone https://github.com/Dexter88xD/ft_libc.git
+  cd ft_libc
 ```
 
 ### **Step 2: Build the Library**
 Use the unified `Makefile`:
 - Build all [libft](https://github.com/Dexter88xD/libft) components:
   ```bash
-  make
+    make
   ```
-- Build libft components with bonuses:
+- Build [libft](https://github.com/Dexter88xD/libft) components with bonuses:
   ```bash
-  make bonus
+    make bonus
   ```
 - Build only [ft_printf](https://github.com/Dexter88xD/ft_printf):
   ```bash
-  make printf
+    make printf
   ```
 - Build only [get_next_line](https://github.com/Dexter88xD/get_next_line):
   ```bash
-  make gnl
+    make gnl
   ```
 - Build all components:
   ```bash
-  make files
+    make files
   ```
 ---
 
@@ -135,31 +135,31 @@ Use the unified `Makefile`:
 Here’s an example showcasing the combined functionality:
 
 ```c
-#include "libft.h"
-#include <stdio.h>
-
-int main(void)
-{
-    char *line;
-    
-    // Using ft_printf
-    ft_printf("Welcome to Dexter88xD-libft!\n");
-    
-    // Using ft_strlen
-    char *str = "Hello, Libft!";
-    ft_printf("String length: %d\n", ft_strlen(str));
-    
-    // Using get_next_line
-    int fd = open("example.txt", O_RDONLY);
-    if (fd >= 0 && get_next_line(fd, &line) > 0)
-    {
-        ft_printf("Read line: %s\n", line);
-        free(line);
-        close(fd);
-    }
-    
-    return 0;
-}
+  #include "libft.h"
+  #include <stdio.h>
+  
+  int main(void)
+  {
+      char *line;
+      
+      // Using ft_printf
+      ft_printf("Welcome to Dexter88xD-libft!\n");
+      
+      // Using ft_strlen
+      char *str = "Hello, Libft!";
+      ft_printf("String length: %d\n", ft_strlen(str));
+      
+      // Using get_next_line
+      int fd = open("example.txt", O_RDONLY);
+      if (fd >= 0 && get_next_line(fd, &line) > 0)
+      {
+          ft_printf("Read line: %s\n", line);
+          free(line);
+          close(fd);
+      }
+      
+      return 0;
+  }
 ```
 
 ---
