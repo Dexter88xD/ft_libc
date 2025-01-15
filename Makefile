@@ -17,27 +17,27 @@ FT_PRINTF_FILES = ft_printf/ft_printf.c
 
 GET_NEXT_LINE_FILES = get_next_line/get_next_line.c get_next_line/get_next_line_utils.c get_next_line/get_next_line_bonus.c get_next_line/get_next_line_utils_bonus.c
 
-OBJECTS = $(FILES:.c=.o)
+OBJECTS = $(FILES:%.c=%.o)
 
-BONUS_OBJECTS = $(BONUS:.c=.o)
+BONUS_OBJECTS = $(BONUS:%.c=%.o)
 
-PRINTF_OBJECTS = $(FT_PRINTF_FILES:.c=.o)
+PRINTF_OBJECTS = $(FT_PRINTF_FILES:%.c=%.o)
 
-GNL_OBJECTS = $(GET_NEXT_LINE_FILES:.c=.o)
+GNL_OBJECTS = $(GET_NEXT_LINE_FILES:%.c=%.o)
 
 all: $(NAME)
 
 $(NAME): $(OBJECTS)
-	ar rcs $(NAME) $<
+	ar rcs $(NAME) $^
 
 bonus: $(BONUS_OBJECTS)
-	ar rcs $(NAME) $<
+	ar rcs $(NAME) $^
 
 printf: $(PRINTF_OBJECTS)
-	ar rcs $(NAME) $<
+	ar rcs $(NAME) $^
 
 gnl: $(GNL_OBJECTS)
-	ar rcs $(NAME) $<
+	ar rcs $(NAME) $^
 
 files: $(OBJECTS) $(BONUS_OBJECTS) $(PRINTF_OBJECTS) $(GNL_OBJECTS)
 	ar rcs $(NAME) $^
