@@ -1,16 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_next_line_bonus.c                              :+:      :+:    :+:   */
+/*   get_next_line.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: sohamdan <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/28 09:03:49 by sohamdan          #+#    #+#             */
-/*   Updated: 2025/01/19 22:25:53 by sohamdan         ###   ########.fr       */
+/*   Updated: 2025/02/09 14:27:03 by sohamdan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "get_next_line_bonus.h"
+#include "libft.h"
 
 static char	*line_extract(char **buffer)
 {
@@ -63,7 +63,7 @@ static ssize_t	line_read(char **buffer, int fd)
 	ssize_t	bytes_read;
 
 	bytes_read = 0;
-	while (!ft_strchr(*buffer, '\n'))
+	while (!ft_custom_strchr(*buffer, '\n'))
 	{
 		temp_buffer = (char *)malloc((size_t)BUFFER_SIZE + 1);
 		if (!temp_buffer)
