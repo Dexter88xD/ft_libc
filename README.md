@@ -13,6 +13,7 @@
 - [Usage](#usage)
 - [Contributing](#contributing)
 - [License](#license)
+- [Disclaimer](#disclaimer)
 
 ---
 
@@ -175,3 +176,17 @@ Feel free to contribute by:
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+Sure! Here's how you can add a disclaimer section at the top of your README file:
+
+---
+
+## Disclaimer
+
+**Important Note:**
+
+Please be aware that this project is still under development, and there may be issues with relinking and some functionalities of `ft_printf` and `get_next_line`. These issues are actively being worked on, and improvements are being made to ensure better stability and performance. If you encounter any problems, please be patient, and feel free to report them via the project's [issues page](https://github.com/Dexter88xD/ft_libc/issues).
+
+This disclaimer will be removed once the project reaches a stable release.
+
+---
