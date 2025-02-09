@@ -1,8 +1,6 @@
 # This is the brain of the whole operation.
 # Let's get this ship going!
 
-.PHONY: all clean fclean re a
-
 CC = cc
 
 CFLAGS = -Wall -Wextra -Werror
@@ -13,9 +11,9 @@ FILES = ft_isalpha.c ft_toupper.c ft_isdigit.c ft_tolower.c ft_isalnum.c ft_strc
 
 BONUS = ft_lstnew_bonus.c ft_lstadd_front_bonus.c ft_lstsize_bonus.c ft_lstlast_bonus.c ft_lstadd_back_bonus.c ft_lstdelone_bonus.c ft_lstclear_bonus.c ft_lstiter_bonus.c ft_lstmap_bonus.c
 
-FT_PRINTF_FILES = ft_printf/ft_printf.c
+FT_PRINTF_FILES = ft_printf.c
 
-GET_NEXT_LINE_FILES = get_next_line/get_next_line.c get_next_line/get_next_line_utils.c get_next_line/get_next_line_bonus.c get_next_line/get_next_line_utils_bonus.c
+GET_NEXT_LINE_FILES = get_next_line.c get_next_line_utils.c
 
 OBJECTS = $(FILES:%.c=%.o)
 
@@ -43,12 +41,15 @@ files: $(OBJECTS) $(BONUS_OBJECTS) $(PRINTF_OBJECTS) $(GNL_OBJECTS)
 	ar rcs $(NAME) $^
 
 %.o : %.c
-	$(CC) $(CFLAGS) -c $^ -o $@
+	$(CC) $(CFLAGS) -c $< -o $@
 
 clean:
 	rm -f $(OBJECTS) $(BONUS_OBJECTS) $(PRINTF_OBJECTS) $(GNL_OBJECTS)
 
-fclean:
-	rm -f $(NAME) $(OBJECTS) $(BONUS_OBJECTS) $(PRINTF_OBJECTS) $(GNL_OBJECTS)
+fclean: clean
+	rm -f $(NAME)
 
 re: fclean all
+
+.PHONY: all clean fclean re a toz
+.SECONDARY: $(OBJECTS) $(BONUS_OBJECTS) $(PRINTF_OBJECTS) $(GNL_OBJECTS)
