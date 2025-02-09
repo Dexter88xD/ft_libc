@@ -37,7 +37,7 @@ The `ft_libc` library provides a robust suite of tools for developers working in
 
 ### **3. Line Reading ([get_next_line](https://github.com/Dexter88xD/get_next_line))**
 - Efficiently read lines from a file descriptor.
-- Supports both single and multiple file descriptors (in the bonus section of gnl).
+- Supports both single and multiple file descriptors.
 
 ---
 
