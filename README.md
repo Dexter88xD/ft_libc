@@ -45,8 +45,9 @@ The `ft_libc` library provides a robust suite of tools for developers working in
 
 ```
   └── Dexter88xD-libft/
-      ├── ft_printf/
-      ├── get_next_line/
+      ├── ft_printf.c
+      ├── get_next_line.c
+      ├── get_next_line_utils.c
       ├── README.md
       ├── LICENSE
       ├── Makefile
@@ -136,7 +137,6 @@ Here’s an example showcasing the combined functionality:
 
 ```c
   #include "libft.h"
-  #include <stdio.h>
   
   int main(void)
   {
