@@ -177,8 +177,6 @@ Feel free to contribute by:
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-Sure! Here's how you can add a disclaimer section at the top of your README file:
-
 ---
 
 ## Disclaimer
