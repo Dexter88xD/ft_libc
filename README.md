@@ -48,6 +48,7 @@ The `ft_libc` library provides a robust suite of tools for developers working in
       ├── README.md
       ├── LICENSE
       ├── Makefile
+      ├── libft.h
       └── src/
         ├── ft_printf.c
         ├── get_next_line.c
@@ -94,8 +95,7 @@ The `ft_libc` library provides a robust suite of tools for developers working in
         ├── ft_strtrim.c
         ├── ft_substr.c
         ├── ft_tolower.c
-        ├── ft_toupper.c
-        └── libft.h
+        └── ft_toupper.c
 ```
 
 ---
