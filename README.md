@@ -46,56 +46,57 @@ The `ft_libc` library provides a robust suite of tools for developers working in
 
 ```
   └── Dexter88xD-libft/
-      ├── ft_printf.c
-      ├── get_next_line.c
-      ├── get_next_line_utils.c
       ├── README.md
       ├── LICENSE
       ├── Makefile
-      ├── ft_atoi.c
-      ├── ft_bzero.c
-      ├── ft_calloc.c
-      ├── ft_isalnum.c
-      ├── ft_isalpha.c
-      ├── ft_isascii.c
-      ├── ft_isdigit.c
-      ├── ft_isprint.c
-      ├── ft_itoa.c
-      ├── ft_lstadd_back_bonus.c
-      ├── ft_lstadd_front_bonus.c
-      ├── ft_lstclear_bonus.c
-      ├── ft_lstdelone_bonus.c
-      ├── ft_lstiter_bonus.c
-      ├── ft_lstlast_bonus.c
-      ├── ft_lstmap_bonus.c
-      ├── ft_lstnew_bonus.c
-      ├── ft_lstsize_bonus.c
-      ├── ft_memchr.c
-      ├── ft_memcmp.c
-      ├── ft_memcpy.c
-      ├── ft_memmove.c
-      ├── ft_memset.c
-      ├── ft_putchar_fd.c
-      ├── ft_putendl_fd.c
-      ├── ft_putnbr_fd.c
-      ├── ft_putstr_fd.c
-      ├── ft_split.c
-      ├── ft_strchr.c
-      ├── ft_strdup.c
-      ├── ft_striteri.c
-      ├── ft_strjoin.c
-      ├── ft_strlcat.c
-      ├── ft_strlcpy.c
-      ├── ft_strlen.c
-      ├── ft_strmapi.c
-      ├── ft_strncmp.c
-      ├── ft_strnstr.c
-      ├── ft_strrchr.c
-      ├── ft_strtrim.c
-      ├── ft_substr.c
-      ├── ft_tolower.c
-      ├── ft_toupper.c
-      └── libft.h
+      └── src/
+        ├── ft_printf.c
+        ├── get_next_line.c
+        ├── get_next_line_utils.c
+        ├── ft_atoi.c
+        ├── ft_bzero.c
+        ├── ft_calloc.c
+        ├── ft_isalnum.c
+        ├── ft_isalpha.c
+        ├── ft_isascii.c
+        ├── ft_isdigit.c
+        ├── ft_isprint.c
+        ├── ft_itoa.c
+        ├── ft_lstadd_back_bonus.c
+        ├── ft_lstadd_front_bonus.c
+        ├── ft_lstclear_bonus.c
+        ├── ft_lstdelone_bonus.c
+        ├── ft_lstiter_bonus.c
+        ├── ft_lstlast_bonus.c
+        ├── ft_lstmap_bonus.c
+        ├── ft_lstnew_bonus.c
+        ├── ft_lstsize_bonus.c
+        ├── ft_memchr.c
+        ├── ft_memcmp.c
+        ├── ft_memcpy.c
+        ├── ft_memmove.c
+        ├── ft_memset.c
+        ├── ft_putchar_fd.c
+        ├── ft_putendl_fd.c
+        ├── ft_putnbr_fd.c
+        ├── ft_putstr_fd.c
+        ├── ft_split.c
+        ├── ft_strchr.c
+        ├── ft_strdup.c
+        ├── ft_striteri.c
+        ├── ft_strjoin.c
+        ├── ft_strlcat.c
+        ├── ft_strlcpy.c
+        ├── ft_strlen.c
+        ├── ft_strmapi.c
+        ├── ft_strncmp.c
+        ├── ft_strnstr.c
+        ├── ft_strrchr.c
+        ├── ft_strtrim.c
+        ├── ft_substr.c
+        ├── ft_tolower.c
+        ├── ft_toupper.c
+        └── libft.h
 ```
 
 ---
@@ -110,25 +111,21 @@ The `ft_libc` library provides a robust suite of tools for developers working in
 
 ### **Step 2: Build the Library**
 Use the unified `Makefile`:
-- Build all [libft](https://github.com/Dexter88xD/libft) components:
+- Build the library:
   ```bash
     make
   ```
-- Build [libft](https://github.com/Dexter88xD/libft) components with bonuses:
+- Remove the object files:
   ```bash
-    make bonus
+    make clean
   ```
-- Build only [ft_printf](https://github.com/Dexter88xD/ft_printf):
+- Clean the repository:
   ```bash
-    make printf
+    make fclean
   ```
-- Build only [get_next_line](https://github.com/Dexter88xD/get_next_line):
+- Rebuild the library:
   ```bash
-    make gnl
-  ```
-- Build all components:
-  ```bash
-    make files
+    make re
   ```
 ---
 
